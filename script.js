@@ -85,7 +85,7 @@ function testArguments () {
     function generateError ( numArgs ) {
         var err = new Error ('Invalid arguments')
         err.name = 'Application';
-        err.stack = `Function needs 3 arguments, but only ${numArgs}`;
+        err.stack = `Function needs 3 arguments, but only ${numArgs} present`;
         throw err;
     }
     try {
